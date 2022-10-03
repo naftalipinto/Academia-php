@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    width: 100vw;
+    padding: 0;
+}
+
+body*{
+    box-sizing: border-box;
+}
+.main-login{
+
+    width: 100vw;
+    height: 100vh;
+    background:#616A6B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.left-login>img{
+    width: 50vw;
+    height: 100vh;
+}
+.right-login{
+
+    width: 50vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.card-login{
+
+    width:60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #283747 ;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px  #00000056;
+
+    
+     
+}
+.card-login img{
+    align-self: center;
+    width: 60%;
+    height: 60%;
+    border-radius: 40px;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+
+}
+.textfield> input{
+    width:100%;
+    border:none;
+    border-radius:10px;
+    padding: 15px;
+    background:white;
+    color: black;
+    font-size: 12pt;
+      box-shadow:  0px 10px 40px  #00000056;
+      outline: none;
+      box-sizing: border-box;
+}
+
+.textfield> label{
+    color:gray;
+    margin-bottom: 10px;
+     
+}
+.textfield>input::placeholder{
+    color:gray;
+
+}
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:#283747; 
+    background: white;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px;
+}
+
+.btn-login:hover{
+
+    color:white; 
+    background:#283747;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login>h1{
+        display: none;
+
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login>img{
+       width: 50vh ;
+    }
+
+    .card-login{
+        width: 90%;
+    }    
+}
